@@ -33,6 +33,7 @@ LV_IMG_DECLARE(stickyCatHeart4);
 LV_IMG_DECLARE(stickyCatHeart5);
 LV_IMG_DECLARE(stickyCatHeart6);
 LV_IMG_DECLARE(stickyCatHeart7);
+LV_IMG_DECLARE(stickyCatHeart8);
 
 const lv_img_dsc_t *anim_imgs[] = {
     &stickyCatHeart1,
@@ -42,6 +43,7 @@ const lv_img_dsc_t *anim_imgs[] = {
     &stickyCatHeart5,
     &stickyCatHeart6,
     &stickyCatHeart7,
+    &stickyCatHeart8,
 };
 
 static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
@@ -139,8 +141,8 @@ int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
 
     lv_obj_t * art = lv_animimg_create(widget->obj);            //<--
     //lv_obj_center(art);                                         //<--
-    lv_obj_align(art, LV_ALIGN_TOP_LEFT, -20, 0);                 //<--
-    lv_animimg_set_src(art, (const void **) anim_imgs, 7);      //<--
+    lv_obj_align(art, LV_ALIGN_TOP_LEFT, 0, 0);                 //<--
+    lv_animimg_set_src(art, (const void **) anim_imgs, 8);      //<--
     lv_animimg_set_duration(art, 3500);                         //<--
     lv_animimg_set_repeat_count(art, LV_ANIM_REPEAT_INFINITE);  //<--
     lv_animimg_start(art);                                      //<--
