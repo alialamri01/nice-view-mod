@@ -26,7 +26,7 @@ LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 LV_IMG_DECLARE(balloon);
 LV_IMG_DECLARE(jelllyfish);
 LV_IMG_DECLARE(seahorse);
-LV_IMG_DECLARE(stickyCatHeart5_map);
+LV_IMG_DECLARE(stickyCatHeart5);
 
 static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
 
