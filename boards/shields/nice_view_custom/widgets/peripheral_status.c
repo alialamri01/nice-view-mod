@@ -33,6 +33,15 @@ LV_IMG_DECLARE(stickyCatHeart4);
 LV_IMG_DECLARE(stickyCatHeart5);
 LV_IMG_DECLARE(stickyCatHeart6);
 
+const lv_img_dsc_t *anim_imgs[] = {
+    &stickyCatHeart1,
+    &stickyCatHeart2,
+    &stickyCatHeart3,
+    &stickyCatHeart4,
+    &stickyCatHeart5,
+    &stickyCatHeart6,
+};
+
 static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
 
 struct peripheral_status_state {
